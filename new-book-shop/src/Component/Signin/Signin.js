@@ -48,11 +48,11 @@ const Signin = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="primary" type="submit" className='mx-auto d-block w-50'>
+                <Button variant="primary" type="submit" className='mx-auto d-block w-25 rounded-pill'>
                     Login
                 </Button>
             </Form>
-            <p>New to Book lover?</p> <Link to="/signup" className='text-success pe-auto  text-decoration-none' onClick={Navigateregister}>Please register</Link>
+            <p>New to Book lover ?</p> <Link to="/signup" className='text-success pe-auto  text-decoration-none ' onClick={Navigateregister}>Please register</Link>
         </div>
     );
 };

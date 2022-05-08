@@ -9,6 +9,8 @@ import Detail from './Component/Detail/Detail';
 import Notfound from './Component/Notfound/Notfound';
 import Signin from './Component/Signin/Signin';
 import Signup from './Component/Signup/Signup';
+import Checkout from './Component/Checkout/Checkout';
+import Requireauth from './Component/Requireauth/Requireauth';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route path='/services/:serviceID' element={<Detail></Detail>}></Route>
         <Route path='/signin' element={<Signin></Signin>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='/checkout' element={<Requireauth><Checkout></Checkout></Requireauth>}></Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
 
       </Routes>
