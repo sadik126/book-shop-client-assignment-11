@@ -24,6 +24,9 @@ const Header = () => {
                         <li className="nav-item me-4">
                             <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
+                        <li className="nav-item me-4">
+                            <Link className="nav-link text-danger fw-bold" to="/signin">Login</Link>
+                        </li>
 
                         {/* {
                             user && <>
