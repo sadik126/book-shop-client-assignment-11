@@ -3,7 +3,7 @@ import img from '../img/book 1.png'
 
 const Section1 = () => {
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 mb-5'>
             <div className="row">
                 <div className="col-lg-6">
                     <img className='img-fluid rounded' width='400px' src={img} alt="" />
