@@ -6,11 +6,12 @@ import auth from '../../firebase.init';
 
 const Header = () => {
     const [user] = useAuthState(auth)
+    console.log(user)
     const Handlesignout = () => {
         signOut(auth)
     }
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-success py-4">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-success">
             <div className="container">
                 <a className="navbar-brand fw-bold fs-2" href="#"> <span className='text-danger'> BOOK </span>LOVER</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,51 +23,65 @@ const Header = () => {
                             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
 
+
+
                         <li className="nav-item me-4">
                             <Link className="nav-link" to="/services">Services</Link>
                         </li>
-                        <li className="nav-item me-4">
+                        {/* <li className="nav-item me-4">
                             <Link className="nav-link" to="/about">About</Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item me-4">
                             <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
-                        <li className="nav-item me-4">
+                        {/* <li className="nav-item me-4">
                             <Link className="nav-link" to="/signup">Signup</Link>
-                        </li>
-                        <li className="nav-item me-4">
-                            <Link className="nav-link text-danger fw-bold" to="/signin">Login</Link>
-                        </li>
+                        </li> */}
 
-                        {/* {
-                            user && <>
-                                <Link className="nav-link" to="/addservice">Add service</Link>
-                                <Link className="nav-link" to="/manageservice">Manage service</Link>
-                            </>
-                        }
+
                         {
                             user ? <li className="nav-item me-4">
-                                <Link className="nav-link text-danger" onClick={Handlesignout} to="/signin">Logout</Link>
+                                <Link className="nav-link text-danger fw-bold" onClick={Handlesignout} to="/signin">Logout</Link>
                             </li>
                                 :
+
                                 <li className="nav-item me-4">
-                                    <Link className="nav-link text-info" to="/signin">Login</Link>
+                                    <Link className="nav-link text-danger fw-bold" to="/signin">Login</Link>
                                 </li>
 
-                        } */}
 
-                        {/* <li className="nav-item me-4">
-                                <Link className="nav-link" to="/signup">Signup</Link>
-                            </li> */}
+                        }
 
-                        {/* {
+
+                        {
                             user ? <li className="nav-item me-4">
                                 <Link className="nav-link" to="/"></Link>
                             </li>
                                 : <li className="nav-item me-4">
                                     <Link className="nav-link" to="/signup">Signup</Link>
                                 </li>
-                        } */}
+                        }
+
+
+
+
+                        {
+                            user ? <li className="nav-item me-4">
+                                <Link className="nav-link active" aria-current="page" to="/">{user.displayName}</Link>
+
+
+                            </li> :
+                                <li className="nav-item me-4">
+                                    <Link className="nav-link active" aria-current="page" to="/"></Link>
+                                </li>
+                        }
+                        {
+                            user ? <img src={user.photoURL} className="rounded-circle" width="50px" alt="" /> : <li className="nav-item me-4">
+                                <Link className="nav-link active" aria-current="page" to="/"></Link>
+                            </li>
+                        }
+
+
 
 
 

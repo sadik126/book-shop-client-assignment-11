@@ -72,18 +72,18 @@ const Signup = () => {
             <Form onSubmit={Handleusesignup} >
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control onBlur={handlename} type="text" placeholder="Enter name" />
+                    <Form.Control onBlur={handlename} type="text" placeholder="Enter name" required />
 
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control onBlur={handleemail} type="email" placeholder="Enter email" />
+                    <Form.Control onBlur={handleemail} type="email" placeholder="Enter email" required />
 
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control onBlur={Handlepass} type="password" placeholder="Password" />
+                    <Form.Control onBlur={Handlepass} type="password" placeholder="Password" required />
                 </Form.Group>
 
                 <Button variant="success" type="submit">
