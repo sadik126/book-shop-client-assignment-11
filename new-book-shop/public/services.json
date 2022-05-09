@@ -4,6 +4,7 @@
         "name": "Leaving time",
         "author": "Jodi Picoult",
         "price": "3000",
+        "supplier": "sadikhimel04@gmail.com",
         "stock": "22",
         "description": "A 13-year-old girl searches for her mother, who disappeared after a terrible accident. She gets some help from a psychic and a detective. Together, they find out that sometimes asking questions gets them answers they didn’t want to know…",
         "img": "https://images-na.ssl-images-amazon.com/images/I/41rzmtxGyvL._SX331_BO1,204,203,200_.jpg"
@@ -14,6 +15,7 @@
         "price": "4000",
         "stock": "20",
         "author": "James Patterson",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "Four women join together to catch a killer who’s murdering people in terrible ways. This is the first in a series, so if you like this one, you can continue reading about this team of women.",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51udawWvXIL._SX324_BO1,204,203,200_.jpg"
     },
@@ -23,6 +25,7 @@
         "price": "1550",
         "stock": "20",
         "author": "Ted Dekker",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "Imagine that you’re driving your car when a phone rings. The person on the line says you have three minutes to confess your sin to the world, or your car will explode. What do you do? In this book, Kevin Parson is chased by a killer for something he’s not sure he did. Follow the thrilling ride.",
         "img": "https://m.media-amazon.com/images/I/517CXMgdwEL.jpg"
     },
@@ -32,6 +35,7 @@
         "price": "2550",
         "stock": "20",
         "author": "Stephen King",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "This book is the first in a trilogy, or a set of three books. In it, a retired cop tries to stop a man from killing thousands of people. Will he be able to stop the terrible event in time?",
         "img": "https://images-na.ssl-images-amazon.com/images/I/51+Xd9XFwsL._SX322_BO1,204,203,200_.jpg"
     },
@@ -41,6 +45,7 @@
         "price": "2550",
         "stock": "20",
         "author": "Angela Marsons",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "Someone is killing children. Detective Kim Stone is about to find out that they’ve been killing for a much longer time than anyone realized. But will Stone be able to stop the murderer before they strike again?",
         "img": "https://m.media-amazon.com/images/I/51J44lEfCbL._SY346_.jpg"
     },
@@ -50,6 +55,7 @@
         "price": "2750",
         "stock": "30",
         "author": "Danielle Steel",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "Does love last forever? The couples in this story believe so. This is a story about love that even death can’t destroy.",
         "img": "https://m.media-amazon.com/images/I/5103BfupPSL.jpg"
     },
@@ -59,6 +65,7 @@
         "price": "2750",
         "stock": "30",
         "author": "Angela Marsons",
+        "supplier": "sadikhimel04@gmail.com",
         "description": "Someone is killing children. Detective Kim Stone is about to find out that they’ve been killing for a much longer time than anyone realized. But will Stone be able to stop the murderer before they strike again?",
         "img": "https://m.media-amazon.com/images/I/5103BfupPSL.jpg"
     }

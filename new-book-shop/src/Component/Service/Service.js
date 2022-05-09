@@ -3,11 +3,15 @@ import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const Service = (props) => {
-    const { id, name, price, img, description } = props.service;
+    const { _id, name, price, img, description } = props.service;
     const nevigate = useNavigate();
 
     const nevigatedetail = (id) => {
-        nevigate(`/services/${id}`)
+        nevigate(`/products/${id}`)
+    }
+
+    const nevigateupdate = (id) => {
+        nevigate(`/update/${id}`)
     }
     return (
         <div className='col-md-4 d-flex justify-content-center'>
@@ -20,7 +24,8 @@ const Service = (props) => {
                         {description.slice(0, 150)}
                     </Card.Text>
                     <h4 className='text-danger fw-bold'>Price :{price}৳</h4>
-                    <Button variant="primary" onClick={() => nevigatedetail(id)}>Show detail</Button>
+                    <Button variant="primary" onClick={() => nevigatedetail(_id)}>Show detail</Button>
+                    <Button variant="success ms-2" onClick={() => nevigateupdate(_id)}>update product</Button>
                 </Card.Body>
             </Card>
 
