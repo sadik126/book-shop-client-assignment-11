@@ -25,7 +25,7 @@ const Service = (props) => {
                     </Card.Text>
                     <h4 className='text-danger fw-bold'>Price :{price}৳</h4>
                     <Button variant="primary" onClick={() => nevigatedetail(_id)}>Show detail</Button>
-                    <Button variant="success ms-2" onClick={() => nevigateupdate(_id)}>update product</Button>
+                    <Button variant="success ms-2" onClick={() => nevigateupdate(_id)}>update stock</Button>
                 </Card.Body>
             </Card>
 
