@@ -5,44 +5,10 @@ import { useForm } from 'react-hook-form';
 
 const Additems = () => {
     const { register, handleSubmit } = useForm()
-    // const { password, setPassword } = useForm()
-    // const { name, setName } = useForm()
-    // const { price, setPrice } = useForm()
-    // const { stock, setStock } = useForm()
-    // const { description, setDescription } = useForm()
-    // const { image, setImage } = useForm()
-    // const handleemail = async (e) => {
-    //     setEmail(e.target.value)
-
-    // }
-
-    // const handlename = async (e) => {
-    //     setName(e.target.value)
-    // }
-
-    // const Handlepass = async (e) => {
-    //     setPassword(e.target.value)
-    // }
-
-    // const Handleprice = async (e) => {
-    //     setPrice(e.target.value)
-    // }
-
-    // const handlestock = async (e) => {
-    //     setStock(e.target.value)
-    // }
-
-    // const handledescription = async (e) => {
-    //     setDescription(e.target.value)
-    // }
-
-    // const handleimage = async (e) => {
-    //     setImage(e.target.value)
-    // }
 
     const onSubmit = data => {
         // e.preventDefault()
-        const url = `http://localhost:4000/products`
+        const url = `https://radiant-falls-05577.herokuapp.com/products`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -56,11 +22,7 @@ const Additems = () => {
                 console.log(data)
             })
 
-        // await createUserWithEmailAndPassword(email, password)
-        // await updateProfile({ displayName: name });
-        // // console.log('Updated profile');
-        // nevigate('/')
-        // console.log(email, password, name, price, stock, description, image)
+
 
     }
     return (

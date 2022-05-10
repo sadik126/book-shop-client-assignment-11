@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 const Deleteitem = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('https://radiant-falls-05577.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     const handleDelete = id => {
         const proceed = window.confirm('are you sure?')
         if (proceed) {
-            const url = `http://localhost:4000/products/${id}`
+            const url = `https://radiant-falls-05577.herokuapp.com/products/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

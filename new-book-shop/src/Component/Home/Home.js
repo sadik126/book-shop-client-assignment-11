@@ -12,7 +12,7 @@ const Home = () => {
     console.log(user)
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('https://radiant-falls-05577.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])

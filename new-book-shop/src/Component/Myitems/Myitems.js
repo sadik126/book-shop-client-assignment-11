@@ -11,7 +11,7 @@ const Myitems = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `http://localhost:4000/products?email=${email}`
+            const url = `https://radiant-falls-05577.herokuapp.com/products?email=${email}`
             const { data } = await axios.get(url)
             setItems(data)
             // const { data } = await axios.get(url)
@@ -21,7 +21,9 @@ const Myitems = () => {
     }, [user])
     return (
         <div>
-            here is my items{items.length}
+            {
+                items.map(item => <div>{item.name}</div>)
+            }
         </div>
     );
 };

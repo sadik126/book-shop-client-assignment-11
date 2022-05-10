@@ -14,7 +14,7 @@ const Detail = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:4000/products/${serviceID}`
+        const url = `https://radiant-falls-05577.herokuapp.com/products/${serviceID}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
