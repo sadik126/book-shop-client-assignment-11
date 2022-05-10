@@ -18,11 +18,11 @@ const Myitems = () => {
             // setItems(data)
         }
         getItems();
-    }, [user])
+    }, [])
     return (
         <div>
             {
-                items.map(item => <div>{item.name}</div>)
+                items.map(item => <div>{items.length}</div>)
             }
         </div>
     );

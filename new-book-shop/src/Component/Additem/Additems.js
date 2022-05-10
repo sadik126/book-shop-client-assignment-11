@@ -66,7 +66,7 @@ const Additems = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Image</Form.Label>
-                    <Form.Control type="text" placeholder="enter image link"{...register("image")} required />
+                    <Form.Control type="text" placeholder="enter image link"{...register("img")} required />
                 </Form.Group>
 
                 <Button variant="success" type="submit">
