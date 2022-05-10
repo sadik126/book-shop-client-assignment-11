@@ -106,7 +106,12 @@ const Signin = () => {
                 </Button>
             </Form>
             {errorElement}
+
             <p>New to Book lover ?</p> <Link to="/signup" className='text-success pe-auto  text-decoration-none ' onClick={Navigateregister}>Please register</Link>
+            <div className='d-flex    justify-content-center'>
+                <p className='mx-3 pt-3 '>Forget password?</p> <Button variant="link" className=' text-danger pe-auto text-decoration-none' onClick={Resetpassword}>Reset password</Button>
+
+            </div>
             <Sociallogin></Sociallogin>
             <ToastContainer />
         </div>

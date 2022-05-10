@@ -2,6 +2,8 @@ import { async, jsonEval } from '@firebase/util';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Additems = () => {
     const { register, handleSubmit } = useForm()
@@ -22,7 +24,9 @@ const Additems = () => {
                 console.log(data)
             })
 
-
+        if (onSubmit) {
+            toast('added your item')
+        }
 
     }
     return (
@@ -69,6 +73,7 @@ const Additems = () => {
                     Add here
                 </Button>
             </Form>
+            <ToastContainer />
         </div>
     );
 };
