@@ -11,19 +11,18 @@ const Myitems = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `https://radiant-falls-05577.herokuapp.com/products?email=${email}`
+            const url = `https://radiant-falls-05577.herokuapp.com/products?email=${email}`;
             const { data } = await axios.get(url)
             setItems(data)
             // const { data } = await axios.get(url)
             // setItems(data)
         }
         getItems();
-    }, [])
+    }, [user])
+    console.log(items)
     return (
         <div>
-            {
-                items.map(item => <div>{items.length}</div>)
-            }
+            {items.length}
         </div>
     );
 };
