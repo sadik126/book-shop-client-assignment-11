@@ -28,7 +28,7 @@ function App() {
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
         <Route path='/additem' element={<Requireauth><Additems></Additems></Requireauth>}></Route>
         <Route path='/myitems' element={<Requireauth><Myitems></Myitems></Requireauth>}></Route>
-        <Route path='/delete' element={<Requireauth><Deleteitem></Deleteitem></Requireauth>}></Route>
+        {/* <Route path='/delete' element={<Requireauth><Deleteitem></Deleteitem></Requireauth>}></Route> */}
         <Route path='/products/:serviceID' element={<Detail></Detail>}></Route>
         <Route path='/update/:serviceID' element={<Requireauth><Update></Update></Requireauth>}></Route>
         <Route path='/signin' element={<Signin></Signin>}></Route>

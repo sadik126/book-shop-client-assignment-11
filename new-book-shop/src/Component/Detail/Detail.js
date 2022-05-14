@@ -9,8 +9,10 @@ const Detail = () => {
     const { serviceID } = useParams();
     const [user] = useAuthState(auth)
     const [products, setProducts] = useState({})
+    const [isReload, setISreload] = useState(false)
+    // const [deliver, setDeliver] = useState(20)
 
-
+    // console.log(deliver)
 
 
     useEffect(() => {
@@ -18,7 +20,32 @@ const Detail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, [isReload])
+
+    const delivered = () => {
+        const stock = products.stock - 1;
+        console.log(stock)
+        const url = `http://localhost:4000/products/${serviceID}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({ stock })
+        })
+
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setISreload(!isReload)
+
+
+
+            })
+    }
+
+
+
     return (
         <div className='container w-50 mx-auto mt-5'>
             this is details
@@ -32,12 +59,13 @@ const Detail = () => {
                     <Card.Img variant="top" src={products.img} height="500px" width="300px" />
                     <Card.Title className='text-danger'>supplier email : {products.supplier}</Card.Title>
                     <Card.Title>stock:{products.stock}</Card.Title>
+
                     <Card.Text>
                         {products.description}
                     </Card.Text>
                     <Button variant="primary me-2">Price: {products.price}</Button>
                     {
-                        user ? <Button variant="danger">Delivered</Button> : <Button disabled variant="danger">Delivered</Button>
+                        user ? <Button onClick={delivered} variant="danger">Delivered</Button> : <Button disabled variant="danger">Delivered</Button>
                     }
                     <br />
 
