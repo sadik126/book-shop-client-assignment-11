@@ -1,12 +1,15 @@
 import { async, jsonEval } from '@firebase/util';
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import auth from '../../firebase.init';
 
 const Additems = () => {
     const { register, handleSubmit } = useForm()
+    const [user] = useAuthState(auth)
 
     const onSubmit = data => {
         // e.preventDefault()
@@ -50,7 +53,7 @@ const Additems = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>supplier</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" {...register("supplier")} required />
+                    <Form.Control type="email" value={user.email} placeholder="Enter email" {...register("supplier")} required />
 
                 </Form.Group>
 
