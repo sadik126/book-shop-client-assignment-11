@@ -25,7 +25,7 @@ const Detail = () => {
     const delivered = () => {
         const stock = products.stock - 1;
         console.log(stock)
-        const url = `http://localhost:4000/products/${serviceID}`
+        const url = `https://radiant-falls-05577.herokuapp.com/${serviceID}`
         fetch(url, {
             method: 'PUT',
             headers: {

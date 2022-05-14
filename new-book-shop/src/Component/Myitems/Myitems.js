@@ -15,7 +15,7 @@ const Myitems = () => {
     useEffect(() => {
         const getItems = async () => {
             const supplier = user.email;
-            const url = `http://localhost:4000/product?supplier=${supplier}`;
+            const url = `https://radiant-falls-05577.herokuapp.com?supplier=${supplier}`;
             const { data } = await axios.get(url)
             setItems(data)
             // const { data } = await axios.get(url)
