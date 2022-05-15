@@ -26,7 +26,7 @@ const Header = () => {
 
 
                         <li className="nav-item me-2">
-                            <Link className="nav-link" to="/products">Manage Inventory</Link>
+                            <Link className="nav-link" to="/products">All books</Link>
                         </li>
 
                         {/* {

@@ -48,7 +48,7 @@ const Detail = () => {
 
     return (
         <div className='container w-50 mx-auto mt-5'>
-            this is details
+
             {/* <Link to='/checkout'>
                 <button className='btn btn-primary'>Proceed checkout</button>
             </Link> */}
@@ -63,9 +63,9 @@ const Detail = () => {
                     <Card.Text>
                         {products.description}
                     </Card.Text>
-                    <Button variant="primary me-2">Price: {products.price}</Button>
+                    <Button variant="primary m-2">Price: {products.price}</Button>
                     {
-                        user ? <Button onClick={delivered} variant="danger">Delivered</Button> : <Button disabled variant="danger">Delivered</Button>
+                        user ? <Button onClick={delivered} variant="danger m-2">Delivered</Button> : <Button disabled variant="danger m-2">Delivered</Button>
                     }
                     <br />
 
