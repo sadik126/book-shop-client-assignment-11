@@ -36,11 +36,11 @@ const Sociallogin = () => {
 
             </div>
             <div className='text-center'>
-                <button onClick={() => signInWithGoogle()} className='btn btn-dark w-50 d-block mx-auto rounded-pill my-3 '>
+                <button onClick={() => signInWithGoogle()} className='btn btn-dark  d-block mx-auto rounded-pill my-3 '>
                     <img style={{ width: '30px' }} src={google} alt="" />
                     Google sign in
                 </button>
-                <button onClick={() => signInWithFacebook()} className='btn btn-primary w-50 d-block mx-auto rounded-pill '>
+                <button onClick={() => signInWithFacebook()} className='btn btn-primary  d-block mx-auto rounded-pill '>
                     <img style={{ width: '30px' }} className='me-2' src={facebook} alt="" />
                     Facebook sign in
                 </button>
